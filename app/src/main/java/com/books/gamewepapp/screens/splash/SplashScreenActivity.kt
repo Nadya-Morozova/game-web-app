@@ -7,8 +7,7 @@ import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.books.gamewepapp.databinding.ActivitySplashBinding
-import com.books.gamewepapp.screens.navigation.MainGameActivity
-import com.books.gamewepapp.screens.web.WebActivity
+import com.books.gamewepapp.screens.game.MainGameActivity
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch

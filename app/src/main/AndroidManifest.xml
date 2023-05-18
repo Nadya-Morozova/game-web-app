@@ -13,8 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GameWepApp"
         tools:targetApi="31">
-        <activity android:name=".screens.splash.SplashScreenActivity"
-            android:exported="true">
+        <activity
+            android:name=".screens.splash.SplashScreenActivity"
+            android:exported="true" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,13 +23,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".screens.navigation.MainGameActivity"
-            android:exported="true">
+            android:name=".screens.game.MainGameActivity"
+            android:exported="true"
+            android:screenOrientation="landscape">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity android:name=".screens.web.WebActivity"/>
+        <activity android:name=".screens.web.WebActivity" />
     </application>
 
 </manifest>
