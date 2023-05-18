@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "593546647682",
+    "project_id": "gamewebapp-010103",
+    "storage_bucket": "gamewebapp-010103.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593546647682:android:bd2b55f569f075ec0bbc9b",
+        "android_client_info": {
+          "package_name": "com.books.gamewepapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "593546647682-h6mt78ah5osgutvrjcsd5nb9an6v1pk3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqfacWcKB1UiwW7demlVZ-1kvi2arsMqg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "593546647682-h6mt78ah5osgutvrjcsd5nb9an6v1pk3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
