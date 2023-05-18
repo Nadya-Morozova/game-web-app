@@ -7,6 +7,7 @@ import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.books.gamewepapp.databinding.ActivitySplashBinding
+import com.books.gamewepapp.screens.navigation.MainGameActivity
 import com.books.gamewepapp.screens.web.WebActivity
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.delay
@@ -31,7 +32,7 @@ class SplashScreenActivity : AppCompatActivity() {
 
         lifecycleScope.launch {
             delay(2000L)
-            startActivity(Intent(this@SplashScreenActivity, WebActivity::class.java))
+            startActivity(Intent(this@SplashScreenActivity, MainGameActivity::class.java))
         }
 
     }
