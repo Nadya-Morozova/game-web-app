@@ -41,10 +41,10 @@ class Cannon(
 
     fun fireCannonball() {
         val velocityX = (CannonCustomView.CANNONBALL_SPEED_PERCENT *
-                view.screenHeight * sin(barrelAngle)).toInt()
+                view.screenWidth * sin(barrelAngle)).toInt()
 
         val velocityY = (CannonCustomView.CANNONBALL_SPEED_PERCENT *
-                view.screenHeight * -cos(barrelAngle)).toInt()
+                view.screenWidth * -cos(barrelAngle)).toInt()
 
         val radius = (view.screenHeight *
                 CannonCustomView.CANNONBALL_RADIUS_PERCENT).toInt()
