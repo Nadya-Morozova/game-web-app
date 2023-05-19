@@ -2,18 +2,14 @@ package com.books.gamewepapp.screens.splash
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.WindowManager
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.lifecycleScope
 import com.books.gamewepapp.databinding.ActivitySplashBinding
 import com.books.gamewepapp.screens.game.MainGameActivity
 import com.books.gamewepapp.screens.web.WebActivity
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
 class SplashScreenActivity : AppCompatActivity() {
@@ -42,6 +38,7 @@ class SplashScreenActivity : AppCompatActivity() {
             } else {
                 startActivity(Intent(this@SplashScreenActivity, WebActivity::class.java))
             }
+            finish()
         }
     }
 }
