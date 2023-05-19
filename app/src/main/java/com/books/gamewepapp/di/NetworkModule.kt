@@ -2,6 +2,7 @@ package com.books.gamewepapp.di
 
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -19,4 +20,8 @@ object NetworkModule {
     fun provideFirebaseDatabaseInstance(): DatabaseReference {
         return FirebaseDatabase.getInstance(URL).reference
     }
+
+    @Singleton
+    @Provides
+    fun provideFirebaseRemoteConfigInstance() = FirebaseRemoteConfig.getInstance()
 }
